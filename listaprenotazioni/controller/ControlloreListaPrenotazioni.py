@@ -18,7 +18,7 @@ class ControlloreListaPrenotazioni():
         with open('listaprenotazioni/data/lista_prenotazioni_salvata.pickle', 'wb') as handle:
             pickle.dump(self.model, handle, pickle.HIGHEST_PROTOCOL)
 
-    def get_lista_dei_prenotazioni(self):
+    def get_lista_delle_prenotazioni(self):
         return self.model.get_lista_prenotazioni()
 
     def get_prenotazione_by_index(self, index):

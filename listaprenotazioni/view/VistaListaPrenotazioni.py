@@ -42,7 +42,7 @@ class VistaListaPrenotazioni(QWidget):
 
     def update_ui(self):
         self.listview_model = QStandardItemModel(self.list_view)
-        for prenotazione in self.controller.get_lista_dei_prenotazioni():
+        for prenotazione in self.controller.get_lista_delle_prenotazioni():
             item = QStandardItem()
             item.setText(prenotazione.cliente.cognome + ": " + prenotazione.servizio.nome)
             item.setEditable(False)
